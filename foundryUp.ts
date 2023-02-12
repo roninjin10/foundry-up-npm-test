@@ -4,4 +4,4 @@ import childProcess from "child_process";
 console.log("running curl -L https://foundry.paradigm.xyz | bash");
 childProcess.execSync("curl -L https://foundry.paradigm.xyz | bash");
 console.log("running foundryup");
-foundryup.run(true);
+childProcess.execSync("foundryup");
