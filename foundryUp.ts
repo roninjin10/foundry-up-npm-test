@@ -3,5 +3,7 @@ import childProcess from "child_process";
 
 console.log("running curl -L https://foundry.paradigm.xyz | bash");
 childProcess.execSync("curl -L https://foundry.paradigm.xyz | bash");
+console.log("sourcing...");
+childProcess.execSync("source $HOME/.bashrc");
 console.log("running foundryup");
 childProcess.execSync("foundryup");
