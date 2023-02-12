@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsx foundryUp.ts && forge build && next build",
+    "build": "tsx foundryUp.ts && source /vercel/.bashrc && forge build && next build",
     "start": "next start",
     "lint": "next lint"
   },
